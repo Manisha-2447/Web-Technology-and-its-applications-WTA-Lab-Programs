@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<h1> Simple Calculator</h1>
+<p>Name: Manisha M       
+USN: 1BY18CS090 </p>
+<script>
+function add(){
+var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c= a + b;
+document.getElementById("answer").value= c;
+}
+function sub(){
+var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c= a - b;
+document.getElementById("answer").value= c;
+}
+function multiply(){
+var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c= a * b;
+document.getElementById("answer").value= c;
+}
+function div(){
+var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c= a / b;
+document.getElementById("answer").value= c;
+}
+</script>
+<style>
+    h1{
+        font-size: 50px;
+        text-align-last: center;
+        background-color:  #F0FFF0;
+    }
+    p{
+        font-size: 20px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+Enter the First number : <input id="first">
+Enter the Second number: <input id="second">
+<button onclick="add()">Add</button>
+<button onclick="sub()">Subtract</button>
+<button onclick="multiply()">Multipy</button>
+<button onclick="div()">Divide</button>
+<input id="answer">
+</body>
+</html>

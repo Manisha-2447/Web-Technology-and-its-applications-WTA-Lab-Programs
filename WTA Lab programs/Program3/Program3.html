@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Program:3 Text Growing and Shrinking</h1>
+<h5>Name: Manisha M    USN: 1BY18CS090</h5>
+	<div id="h"></div>
+	<script>
+		var v = 0, f = 1,t="TEXT-GROWING",color;
+		function a(){
+			if(f==1) v+=5,color="red"; else v-=5,color="blue";
+			document.getElementById("h").innerHTML = "<h1 style=\"font-size: "+v+"px ; margin: 0px; color : "+color+"\"><b> "+t+"</b></h1>";
+			if(v==50)	f = 0,t="TEXT-SHRINKING";
+			if(v==5)	f = 1,t="TEXT-GROWING";
+			c();
+		}
+		function c(){ setTimeout(a,300); }
+		c();
+	</script>
+	<style>
+	body{
+		background-color: #F0FFF0;
+	}
+	
+	h1{
+		text-align: center;
+		font-size: 30px;
+		color: #ff00ff
+	}
+	h5{
+		text-align: center;
+		font-size: 20px;
+		color: #ff00ff
+
+	}
+	</style>
+</body>
+</html>
